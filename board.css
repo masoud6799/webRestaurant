@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: yekan;
+    src: url('fonts/yekan.eot?#') format('embedded-opentype'),
+    url('fonts/yekan.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SOGAND;
+    src: url('fonts/SOGAND.ttf') format('truetype');
+}
+
+.font10 {
+    font: 10px yekan;
+}
+
+.font11 {
+    font: 11px yekan;
+}
+
+.font12 {
+    font: 12px yekan;
+}
+
+.font13 {
+    font: 13px yekan;
+}
+
+.font14 {
+    font: 14px yekan;
+}
+
+.font15 {
+    font: 15px yekan;
+}
+
+.font16 {
+    font: 16px yekan;
+}
+
+.font17 {
+    font: 17px yekan;
+}
+
+.font18 {
+    font: 18px yekan;
+}
+
+.font19 {
+    font: 19px yekan;
+}
+
+.fontS {
+    font: 40px SOGAND;
+}
+
+/*<--------------------------------- Body--------------------------------->*/
+body {
+    background: url("img/bg.png");
+}
+
+li {
+    text-decoration: none;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 70px;
+    left: 68px;
+}
+.tab .tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    display: block;
+
+}
+.tab .tablinks:hover {
+    background-color: #ddd;
+}
+.tab .tablinks:active {
+    background-color: #0cbccc;
+}
+#main {
+    height: 1500px;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    background: #cccccc;
+    border: 1px solid #bbbbbb;
+    margin: 120px auto;
+}
+
+.container .board {
+    width: 95%;
+    height: 200px;
+    background: #ffffff;
+    margin: 20px 0px 0px 30px;
+    border: 1px solid #bbbbbb;
+    border-radius: 15px;
+    position: relative;
+}
+
+.board p {
+    top: 40px;
+    left: 20px;
+    color: #e6e6e5;
+    position: absolute;
+    font-size: large;
+}
+
+.board li {
+    list-style: none;
+    bottom: 0;
+    top: 0;
+}
+
+.board .box {
+    height: 190px;
+    width: 50%;
+    background: #d0d0cf;
+    float: right;
+    border: 1px solid rgba(230, 230, 229, 0.73);
+    margin: 4px;
+    border-radius: 15px;
+}
+
+.board .box ul li {
+    font-size: 18px;
+    color: #0d0d0d;
+    margin: 10px 50px;
+}
+
+.board .box .plus_Box i {
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    margin: 12px;
+    color: #000;
+}
+.board .box .plus_Box  :hover{
+     transition: all 0.800s ease;
+    color: #e49030;
+}
+
+
+/*-----------------------------------------*/
+.addBoard {
+    width: 95%;
+    height: 30px;
+    background: rgba(228, 42, 33, 0.68);
+    margin: 20px auto;
+    border: 1px solid rgba(170, 46, 98, 0.22);
+    border-radius: 15px;
+}
+
+.addBoard > .plusIcon {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.addBoard .plusIcon i {
+    justify-content: center;
+    align-items: center;
+    margin-top: -1px;
+    margin-bottom: 0;
+    font-size: 35px;
+    color: rgba(255, 255, 254, 0.67);
+    margin-left: 2px;
+}
+
+.addBoard :hover {
+    transition: all 0.800s ease;
+    border-radius: 15px;
+}
