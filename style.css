@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background: url(Images/bg.png) repeat;
+    direction: rtl;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+@font-face {
+    font-family: yekan;
+    src: url('fonts/yekan.eot?#') format('embedded-opentype'),
+    url('fonts/yekan.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SOGAND;
+    src: url('fonts/SOGAND.ttf') format('truetype');
+}
+
+.font10 {
+    font: 10px yekan;
+}
+
+.font11 {
+    font: 11px yekan;
+}
+
+.font12 {
+    font: 12px yekan;
+}
+
+.font13 {
+    font: 13px yekan;
+}
+
+.font14 {
+    font: 14px yekan;
+}
+
+.font15 {
+    font: 15px yekan;
+}
+
+.font16 {
+    font: 16px yekan;
+}
+
+.font17 {
+    font: 17px yekan;
+}
+
+.font18 {
+    font: 18px yekan;
+}
+
+.font19 {
+    font: 19px yekan;
+}
+
+.fontS {
+    font: 40px SOGAND;
+}
+body{
+    background: #555555;
+
+}
+/**/
+
+#main{
+    width: 1210px;
+    height: 100%;
+    margin:0 auto;
+}
+header {
+    width: 100%;
+    height: 140px;
+    background: #ee9d1b;
+    box-shadow: 0 1px 3px 0 #ccc;
+    -webkit-box-shadow: 0 1px 3px 0 #ccc;
+    -moz-box-shadow: 0 1px 3px 0 #ccc;
+    -o-box-shadow: 0 1px 3px 0 #ccc;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.headerRight {
+    width: 500px;
+    height: 100%;
+    float: right;
+    /*margin-top: 3px;*/
+}
+
+
+.headerRight .logo img {
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    margin: 12px 0 0 0;
+    float: right;
+
+}
+
+.logo h1 {
+    float: right;
+    margin: 27px 11px 0 0;
+    color: black;
+   }
+.logo h1:hover{
+    color: #00707b
+}
+.logo i{
+    position: relative;
+    width: 100px;
+    height: 95px;
+    font-size: 66px;
+    display: block;
+    float: left;
+    margin-top: 25px;
+    margin-left: -125px;
+   color: black;
+    transition: 2s;
+  
+}
+.logo i:hover{
+    color:green;
+    font-size: 80px;
+}
+/*.logo img{
+    width: 100%;
+    border-radius: 2px;
+    padding-right: 454px;
+}*/
+.headerLeft {
+    width: 700px;
+    height: 100%;
+    float: left;
+}
+
+#navTop {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+#navTop ul {
+    float: left;
+    margin-top: 17px;
+}
+
+#navTop ul li {
+    float: right;
+    width: 100px;
+    height: 95px;
+    text-align: center;
+    box-shadow: 0 0 1px #ccc;
+    -moz-box-shadow: 0 0 1px #ccc;
+    -webkit-box-shadow: 0 0 1px #ccc;
+    -o-box-shadow: 0 0 1px #ccc;
+}
+
+a {
+    text-decoration: none;
+}
+
+#navTop ul li a {
+    display: block;
+    text-align: center;
+    color: #000;
+
+}
+
+#navTop ul li i {
+    font-size: 48px;
+    margin-top: 7px;
+}
+
+#navTop ul li:hover i {
+    color: #31b9ef;
+    font-size: 55px;
+
+}
+
+#navTop ul li:hover {
+    background:#000;
+    color: #000;
+    transition: all 0.800s ease;
+    -moz-transition: all 0.800s ease;
+    -webkit-transition: all 0.800s ease;
+    -o-transition: all 0.800s ease;
+}
+
+#navTop ul li:hover > a {
+    color: #ee1b1b;
+     font-size: 17px;
+}
+#menu-bar .container ul{
+    position: relative;
+}
+#menu-bar{
+
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px #ccc;
+    border-top:1px solid #f80015;
+    -webkit-box-shadow: 0 4px 6px #ccc;
+    -o-box-shadow: 0 4px 6px #ccc;
+    -moz-box-shadow: 0 4px 6px #ccc;
+}
+
+#menu-bar > .container > ul > li{
+
+    float: right;
+    height: 40px;
+}
+
+#menu-bar  > .container > ul >li > a{
+   padding: 0 12px; 
+   height: 40px;
+    display: block;
+    text-align: center;
+    line-height: 38px; 
+    /* */
+     transition: 1s;
+}
+#menu-bar .container ul li ul{
+    width:140px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 3px #eee;
+    z-index: 5;
+    display: none;
+}
+
+#menu-bar .container ul li ul li{
+    height: 35px;
+}
+
+#menu-bar  .container ul li a:hover{
+    background:#c4e4b1;
+    background-color: #92dbb7;
+  font-size: 15px;
+
+}
+
+
+#menu-bar .container ul li ul a{
+    display: block;
+    height: 40px;
+    padding:0 15px;
+    color: #ee1b1b; 
+}
+
+#menu-bar .container ul ul{
+
+    display: none;
+}
+#menu-bar .container ul li:hover > ul{
+    display: block;
+}
+#menu-bar .container ul ul li{
+    position: relative;
+}
+#menu-bar .container ul ul ul{top:0;right: 100%;}
+
+/*------------------------------------*/
+
+#main{
+    width: 100%;
+    background-color: #6f6c70;
+    height: 400px;
+    margin-top:6px;
+    position: relative;
+    
+}
+
+
+#main .content {
+    float: right;
+    /*width: 75%;*/
+    height: 600px;
+}
+
+.slider{
+    height: 363px;
+    background: url('../images/slider.jpg') no-repeat center center;
+    position: absolute;
+}
+.slide-navigation .slide-next{
+    background:url('../images/slide-next.png');
+    width: 88px;
+    height: 84px;
+    /*position: absolute;*/
+    right: 5px;
+    top: 142px;
+}
+.slide-navigation .slide-prev{
+    background:url('../images/slide-prev.png');
+    width: 88px;
+    height: 84px;
+    position: absolute;
+    left: 5px;
+    top: 142px;
+}
+.content .BoxNewPack {
+    width: 100%;
+    height: 160px;
+    background: #ffffff;
+    box-shadow: 0 0 3px 0 #ccc;
+    float: right;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.content .BoxNewPack img {
+    width: 297px;
+    height: 160px;
+}
+
+.titleNewPack {
+    width: 297px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.4);
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.800s ease;
+    overflow: hidden;
+}
+
+.titleNewPack:hover {
+
+    height: 160px;
+    transition: all 0.800s ease;
+
+}
+
+.titleNewPack p {
+    text-align: center;
+    color: #ffff;
+    line-height: 40px;
+}
+
